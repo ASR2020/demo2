@@ -5,13 +5,16 @@ import Card from "../UI/Card.js";
 
 function ExpenseItem(props) {
   const [title, setTitle] = useState(props.title);
+
+  //const [state, setState] = useState(initialstate)
   //let title = props.title;
-    const clickHandler = () => {
+  const clickHandler = () => {
     setTitle("updated");
- 
-   console.log(title);
+
+    //console.log(title);
   };
-  console.log(title)
+  // console.log(props.title);
+
   //console.log(setTitle);
   return (
     <Card className="expense-item">
